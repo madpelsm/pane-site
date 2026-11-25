@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pane Support</title>
+<style>
+  :root { color-scheme: light dark; --text: #1d1d1f; --muted: #6e6e73; --bg: #ffffff; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #f5f5f7; --muted: #a1a1a6; --bg: #000000; --link: #6ea8fe; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 8px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  a { color: var(--link); }
+  nav { margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pane Support</h1>
+  <p class="muted">Your Mac, on your iPhone and iPad.</p>
+
+  <h2>Get help</h2>
+  <p>Ask a question or report a problem by
+  <a href="https://github.com/madpelsm/pane-site/issues/new">opening an issue on GitHub</a> (a free GitHub account is
+  needed). Issues are public: never include passwords, addresses of your Macs or other personal details. It helps to
+  mention your iPhone or iPad model, your Mac model and its macOS version.</p>
+
+  <h2>Set up your Mac</h2>
+  <ol>
+    <li>On the Mac, open System Settings → General → Sharing and turn on <em>Screen Sharing</em> (or <em>Remote
+      Management</em>).</li>
+    <li>Under the info button next to it, allow your user account (or "All users").</li>
+    <li>On your iPhone or iPad, open Pane. Macs on the same network appear on their own; tap one and sign in with that
+      Mac's user name and password. You can also add a Mac by its host name or IP address.</li>
+  </ol>
+  <p>Nothing needs to be installed on the Mac.</p>
+
+  <h2>High Performance mode</h2>
+  <p>On a Mac with Apple silicon running macOS Sonoma or later, Pane can use the Mac's High Performance mode for a
+  sharper, smoother picture. It works on your local network or a private network such as a VPN. A Mac allows one High
+  Performance session at a time; if another device holds it, Pane uses the standard mode.</p>
+
+  <h2>From outside your home or office</h2>
+  <p>Pane connects directly to your Mac. To reach it from elsewhere, put both devices on the same private network,
+  for example with a VPN such as Tailscale, and add the Mac by its address on that network.</p>
+
+  <h2>Using Pane</h2>
+  <ul>
+    <li>Tap the small handle at the top of the screen for the controls: displays, zoom, clipboard, keyboard, touch
+      mode, shortcuts and disconnect.</li>
+    <li>Pinch to zoom, drag with two fingers to scroll, and swipe with three fingers to move between spaces.</li>
+    <li>On iPad, a hardware keyboard, trackpad or mouse works as it would on the Mac, including Command shortcuts.</li>
+  </ul>
+
+  <h2>Something is not working</h2>
+  <ul>
+    <li><strong>The Mac does not appear.</strong> Check that sharing is on and that both devices are on the same
+      network, and that Pane may use the local network (Settings → Privacy &amp; Security → Local Network).</li>
+    <li><strong>Incorrect name or password.</strong> Use the Mac user's account name and password, and check that this
+      user is allowed under Sharing.</li>
+    <li><strong>A session problem.</strong> Pane keeps a short log of recent sessions in the Files app (On My iPhone or
+      On My iPad → Pane → Diagnostics). It holds no passwords or screen content, but it does show your Mac's network address: remove that line before you attach it to an issue.</li>
+  </ul>
+
+  <nav><a href="privacy.html">Privacy Policy</a></nav>
+</main>
+</body>
+</html>
